@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 210.481 s <<< FAILURE! - in TestRunner.TestRunner
+TestRunner.TestRunner.runScenario["UpcomingBikes", "91Wheels"](1)  Time elapsed: 75.147 s  <<< FAILURE!
+java.lang.NumberFormatException: For input string: "₹4.99"
+
+TestRunner.TestRunner.runScenario["GoogleLogin", "91Wheels"](3)  Time elapsed: 64.791 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+

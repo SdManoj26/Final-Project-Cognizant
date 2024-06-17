@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-17T11:28:17 IST" name="Surefire suite" finished-at="2024-06-17T11:31:47 IST" duration-ms="210007">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6fe7aac8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-06-17T11:28:17 IST" name="Surefire test" finished-at="2024-06-17T11:31:47 IST" duration-ms="210007">
+      <class name="TestRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestRunner@6fe7aac8]" started-at="2024-06-17T11:28:17 IST" name="setUpClass" finished-at="2024-06-17T11:28:17 IST" duration-ms="700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a709cc7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6fe7aac8]" started-at="2024-06-17T11:28:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T11:29:32 IST" duration-ms="75140" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["UpcomingBikes"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["91Wheels"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "₹4.99"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "₹4.99"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:651)
+at PageObject.UpcomingBikesPage.getUpcomeingBikesDetails(UpcomingBikesPage.java:105)
+at StepsDefinition.UpcomingBikes.getBikesDetails(UpcomingBikes.java:74)
+at ✽.print bike name, expected price and launch date of bikes priced below 4Lakhs(file:///C:/Users/2318744/eclipse-workspace/hackprojcucu/./Features/hackathon.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6fe7aac8]" started-at="2024-06-17T11:29:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T11:30:41 IST" duration-ms="68862" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["UsedCarsChennai"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["91Wheels"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@6fe7aac8]" started-at="2024-06-17T11:30:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T11:31:46 IST" duration-ms="64791" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["GoogleLogin"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["91Wheels"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 1 out of bounds for length 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at PageObject.GoogleLoginPage.swithtoWindow(GoogleLoginPage.java:48)
+at StepsDefinition.GoogleLogin.putMail(GoogleLogin.java:45)
+at ✽.entered email and clicked next(file:///C:/Users/2318744/eclipse-workspace/hackprojcucu/./Features/hackathon.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@6fe7aac8]" started-at="2024-06-17T11:31:46 IST" name="tearDownClass" finished-at="2024-06-17T11:31:47 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
