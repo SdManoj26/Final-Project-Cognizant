@@ -81,16 +81,27 @@ public class UpcomingBikesPage {
 			{
 				String[] temp = new String[2];
 				temp = price.split(" - ");
-				String t = temp[1].replace("Lakh", "");
-				String s = t.replace("*", "");
-				bikePriceFinal[i] = s.replace("₹", "");
+//				String t = temp[1].replace("Lakh", "");
+//				String s = t.replace("*", "");
+//				bikePriceFinal[i] = s.replace("₹", "");
 				//System.out.println(bikePriceFinal[i]);
+				
+				String numPrice = temp[1].replaceAll("[^0-9.]", "");
+				bikePriceFinal[i] = numPrice;
+//				String inputString = "₹ 2.30 Lakh*";
+//		        String numericValueString = inputString.replaceAll("[^0-9.]", "");
+//		        double numericValue = Double.parseDouble(numericValueString);
+//		        System.out.println("Numeric value: " + numericValue);
+				
+				
 			}
 			else
 			{
-				String t = price.replace("Lakh", "");
-				String s = t.replace("*", "");
-				bikePriceFinal[i] = s.replace("₹", "");
+				String numPrice = price.replaceAll("[^0-9.]", "");
+				bikePriceFinal[i] = numPrice;
+//				String t = price.replace("Lakh", "");
+//				String s = t.replace("*", "");
+//				bikePriceFinal[i] = s.replace("₹", "");
 				//System.out.println(bikePriceFinal[i]);
 			}
 		}
